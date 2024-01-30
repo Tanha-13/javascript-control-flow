@@ -65,3 +65,19 @@ else if(balance < 900){
 else{
     // console.log(`${balance} less than 1200`);
 }
+
+
+// topic: AND(&&)
+const UserLoggedIn = true;
+const debitCard = true;
+const loggedInFromGoogle = false;
+const loggedInFromEmail = true;
+
+if(UserLoggedIn && debitCard && 2==2){
+    console.log('Allow to buy courses');
+}
+
+// topic: OR(||)
+if (loggedInFromEmail || loggedInFromGoogle) {
+    console.log('User Logged in');    
+}
