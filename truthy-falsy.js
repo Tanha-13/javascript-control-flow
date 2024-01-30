@@ -33,3 +33,27 @@ const obj = {};
 else{
     console.log('Code execution start');
 }
+
+
+/**
+ * 01. false == 0 //true
+ * 02. false == '' //true
+ * 03. 0 == "" // true
+ */
+
+// Nullish Coalescing Operator (??) : null undefined
+
+let value;
+// value = 5 ?? 10;
+// value = null ?? 10;
+// value = undefined ?? 15;
+value = null ?? 10 ?? 15;
+
+// console.log(value);
+
+// Ternary Operator
+//syntax
+// condition ? true : false
+
+const iceTeaPrice = 100;
+iceTeaPrice >= 80 ? console.log("greater than 80") : console.log('less than 80');
