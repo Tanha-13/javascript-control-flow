@@ -35,12 +35,33 @@ else{
 }
 // console.log('Execute');
 
-//
+// scope in if-else
 const score = 200;
 if (score > 100) {
     const power = 'fly';
     // var power = 'fly'; //? Identifier 'power' has already been declared.
-    console.log(`User Power: ${power}`);
+    // console.log(`User Power: ${power}`);
 }
-console.log(`User Power: ${power}`); // for const: It will not execute because const is block scoped. //? power is not defined.
+// console.log(`User Power: ${power}`); // for const: It will not execute because const and let are block scoped. //? power is not defined.
 // console.log(`User Power: ${power}`); // for var: It will execute because var is not block scoped. 
+
+
+//implicit scope 
+const balance = 1000;
+//? unreadable and immature code
+// if (balance  > 500) console.log('test'), console.log('test 2');
+
+// nested if-else
+
+if(balance < 500){
+    // console.log(`${balance} is less than 500`);
+}
+else if(balance < 750){
+    // console.log(`${balance} less than 750`);
+}
+else if(balance < 900){
+    // console.log(`${balance} less than 900`);
+}
+else{
+    // console.log(`${balance} less than 1200`);
+}
