@@ -20,6 +20,7 @@ for (let i = 0; i < 10; i++) {
     }
     //console.log(element);
 }
+// console.log(element); //? ReferenceError:element is not defined
 
 
 //
@@ -32,12 +33,19 @@ for(let i = 0; i <= 10; i++){
     }
 }
 
+// Table
 for(let i = 1; i<= 5; i++){
-    console.log(`Table of ${i}`);
+    // console.log(`Table of ${i}`);
     for(let j = 1; j <= 10; j++){
-        console.log(`${i} * ${j} = ${i*j}`);
+        // console.log(`${i} * ${j} = ${i*j}`);
     }
 }
 
 
-// console.log(element); //? ReferenceError:element is not defined
+// 
+const myArray = ["flash", "thor", "batman", "spiderman"];
+console.log(myArray.length);
+for(let i = 0; i<myArray.length; i++){
+    const element = myArray[i];
+    console.log(element);
+}
