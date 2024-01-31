@@ -27,3 +27,24 @@ for (const greet of greetings) {
     // console.log(`Each character is ${greet}`);
 }
 
+//Map
+const map = new Map();
+map.set('BD', "Bangladesh")
+map.set('USA', "United States of America")
+map.set('Fr', "France")
+map.set('BD', "Bangladesh")
+
+// console.log(map);
+
+for (const [key,value] of map) {
+    // console.log(key,':',value);
+}
+
+const myObj = {
+    gameOne: 'NFS',
+    gameTwo: 'Spiderman'
+}
+
+// for (const [key,value] of myObj) {
+//     // console.log(key,':',value); //? TypeError: myObj is not iterable
+// }
